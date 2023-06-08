@@ -14,6 +14,8 @@
 		0643F1CC2A323C43006C90BD /* AirVisualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1CB2A323C43006C90BD /* AirVisualTests.swift */; };
 		0643F1D62A323C43006C90BD /* AirVisualUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1D52A323C43006C90BD /* AirVisualUITests.swift */; };
 		0643F1D82A323C43006C90BD /* AirVisualUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1D72A323C43006C90BD /* AirVisualUITestsLaunchTests.swift */; };
+		0643F1E82A324158006C90BD /* AutoCompleteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1E72A324158006C90BD /* AutoCompleteDataModel.swift */; };
+		0643F1EA2A324DB9006C90BD /* AutoCompleteSearchAirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1E92A324DB9006C90BD /* AutoCompleteSearchAirView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		0643F1D12A323C43006C90BD /* AirVisualUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirVisualUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0643F1D52A323C43006C90BD /* AirVisualUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirVisualUITests.swift; sourceTree = "<group>"; };
 		0643F1D72A323C43006C90BD /* AirVisualUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirVisualUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0643F1E72A324158006C90BD /* AutoCompleteDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteDataModel.swift; sourceTree = "<group>"; };
+		0643F1E92A324DB9006C90BD /* AutoCompleteSearchAirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteSearchAirView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		0643F1B92A323C30006C90BD /* AirVisual */ = {
 			isa = PBXGroup;
 			children = (
+				0643F1E62A323E53006C90BD /* Model */,
+				0643F1E52A323E49006C90BD /* View */,
+				0643F1E42A323E2E006C90BD /* View Model */,
 				0643F1BA2A323C30006C90BD /* AirVisualApp.swift */,
-				0643F1BC2A323C30006C90BD /* ContentView.swift */,
 				0643F1BE2A323C42006C90BD /* Assets.xcassets */,
 				0643F1C02A323C43006C90BD /* Preview Content */,
 			);
@@ -125,6 +131,30 @@
 				0643F1D72A323C43006C90BD /* AirVisualUITestsLaunchTests.swift */,
 			);
 			path = AirVisualUITests;
+			sourceTree = "<group>";
+		};
+		0643F1E42A323E2E006C90BD /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		0643F1E52A323E49006C90BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0643F1BC2A323C30006C90BD /* ContentView.swift */,
+				0643F1E92A324DB9006C90BD /* AutoCompleteSearchAirView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0643F1E62A323E53006C90BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0643F1E72A324158006C90BD /* AutoCompleteDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0643F1BD2A323C30006C90BD /* ContentView.swift in Sources */,
+				0643F1EA2A324DB9006C90BD /* AutoCompleteSearchAirView.swift in Sources */,
+				0643F1E82A324158006C90BD /* AutoCompleteDataModel.swift in Sources */,
 				0643F1BB2A323C30006C90BD /* AirVisualApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
