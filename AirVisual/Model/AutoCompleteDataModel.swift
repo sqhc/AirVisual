@@ -43,6 +43,7 @@ struct CityMeasurement: Codable{
 
 struct AutoCompleteStation: Codable{
     let id: String?
+    let name: String?
     let city: String?
     let state: String?
     let country: String?
@@ -59,7 +60,7 @@ struct StationMeasurement: Codable{
 }
 
 struct StationPollutant: Codable{
-    let conc: Int?
+    let conc: Double?
     let aqius: Int?
     let aqicn: Int?
     let pollutant: String?

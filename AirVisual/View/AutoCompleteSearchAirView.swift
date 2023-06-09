@@ -20,6 +20,9 @@ struct AutoCompleteSearchAirView: View {
         ZStack{
             VStack{
                 searchArea(query: $query, lang: $lang, timezone: $timezone, index: $index, pressure: $pressure, distance: $distance, temperature: $temperature)
+//                NavigationLink("Autocomplete search") {
+//                    AutoCompletesView(vm: AutoCompletesViewModel(query: query, lang: lang, timezone: timezone, index: index, pressure: pressure, distance: distance, temperature: temperature))
+//                }
             }
             .navigationTitle("Auto complete search")
         }
@@ -138,6 +141,10 @@ struct searchArea: View{
                         Text("Celsius")
                     }
                 }
+            }
+            
+            NavigationLink("Autocomplete search") {
+                AutoCompletesView(vm: AutoCompletesViewModel(query: query, lang: lang, timezone: timezone, index: index, pressure: pressure, distance: distance, temperature: temperature))
             }
         }
     }
