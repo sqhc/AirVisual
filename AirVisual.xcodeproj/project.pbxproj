@@ -18,6 +18,9 @@
 		0643F1EA2A324DB9006C90BD /* AutoCompleteSearchAirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1E92A324DB9006C90BD /* AutoCompleteSearchAirView.swift */; };
 		0643F1EC2A325AD1006C90BD /* AutoCompletesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1EB2A325AD1006C90BD /* AutoCompletesView.swift */; };
 		0643F1EE2A325ADF006C90BD /* AutoCompletesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1ED2A325ADF006C90BD /* AutoCompletesViewModel.swift */; };
+		0643F1F02A339902006C90BD /* CityInformationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1EF2A339902006C90BD /* CityInformationDataModel.swift */; };
+		0643F1F22A33A1E9006C90BD /* CityInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1F12A33A1E9006C90BD /* CityInformationView.swift */; };
+		0643F1F42A33A224006C90BD /* CityInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F1F32A33A224006C90BD /* CityInformationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		0643F1E92A324DB9006C90BD /* AutoCompleteSearchAirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteSearchAirView.swift; sourceTree = "<group>"; };
 		0643F1EB2A325AD1006C90BD /* AutoCompletesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompletesView.swift; sourceTree = "<group>"; };
 		0643F1ED2A325ADF006C90BD /* AutoCompletesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompletesViewModel.swift; sourceTree = "<group>"; };
+		0643F1EF2A339902006C90BD /* CityInformationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInformationDataModel.swift; sourceTree = "<group>"; };
+		0643F1F12A33A1E9006C90BD /* CityInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInformationView.swift; sourceTree = "<group>"; };
+		0643F1F32A33A224006C90BD /* CityInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInformationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				0643F1ED2A325ADF006C90BD /* AutoCompletesViewModel.swift */,
+				0643F1F32A33A224006C90BD /* CityInformationViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 				0643F1BC2A323C30006C90BD /* ContentView.swift */,
 				0643F1E92A324DB9006C90BD /* AutoCompleteSearchAirView.swift */,
 				0643F1EB2A325AD1006C90BD /* AutoCompletesView.swift */,
+				0643F1F12A33A1E9006C90BD /* CityInformationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				0643F1E72A324158006C90BD /* AutoCompleteDataModel.swift */,
+				0643F1EF2A339902006C90BD /* CityInformationDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,9 +304,12 @@
 			files = (
 				0643F1EE2A325ADF006C90BD /* AutoCompletesViewModel.swift in Sources */,
 				0643F1BD2A323C30006C90BD /* ContentView.swift in Sources */,
+				0643F1F42A33A224006C90BD /* CityInformationViewModel.swift in Sources */,
+				0643F1F02A339902006C90BD /* CityInformationDataModel.swift in Sources */,
 				0643F1EA2A324DB9006C90BD /* AutoCompleteSearchAirView.swift in Sources */,
 				0643F1E82A324158006C90BD /* AutoCompleteDataModel.swift in Sources */,
 				0643F1BB2A323C30006C90BD /* AirVisualApp.swift in Sources */,
+				0643F1F22A33A1E9006C90BD /* CityInformationView.swift in Sources */,
 				0643F1EC2A325AD1006C90BD /* AutoCompletesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AutoCompletesView: View {
     @StateObject var vm: AutoCompletesViewModel
+    @State var showed = false
     
     var body: some View {
         ZStack{
@@ -65,6 +66,8 @@ struct AutoCompletesView: View {
             }
         }
         .onAppear {
+            guard !showed else { return }
+            showed.toggle()
             vm.fetchResults()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {
@@ -94,6 +97,9 @@ struct AutoCompleteCities: View{
                 Text("Latitude: \(city.location?.lat ?? 0.0) Longitude: \(city.location?.lon ?? 0.0)")
                 Text("Measurement time: \(city.currentMeasurement?.ts ?? "")")
                 Text("AQIUS: \(city.currentMeasurement?.aqius ?? 0) AQICN: \(city.currentMeasurement?.aqicn ?? 0)")
+                NavigationLink("City information") {
+                    CityInformationView(vm: CityInformationViewModel(id: city.id ?? ""))
+                }
             }
         }
     }
