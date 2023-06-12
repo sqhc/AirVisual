@@ -13,6 +13,7 @@ struct CityInformationContainer: Codable{
 
 struct CityInformation: Codable{
     let id: String?
+    let name: String?
     let city: String?
     let state: String?
     let country: String?

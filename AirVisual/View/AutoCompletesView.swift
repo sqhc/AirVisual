@@ -117,6 +117,9 @@ struct AutoCompleteStations: View{
             Text("Latitude: \(station.location?.lat ?? 0.0) Longitude: \(station.location?.lon ?? 0.0)")
             Text("Measured at: \(station.currentMeasurement?.ts ?? "")")
             Text("AQIUS: \(station.currentMeasurement?.aqius ?? 0) AQICN: \(station.currentMeasurement?.aqicn ?? 0)")
+            NavigationLink("Station information") {
+                StationInformationView(vm: StationInformationViewModel(id: station.id ?? ""))
+            }
             if let pollutants = station.currentMeasurement?.pollutants{
                 Section {
                     List(pollutants, id:\.pollutant){ pollutant in
