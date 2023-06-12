@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StationInformationView: View {
     @StateObject var vm: StationInformationViewModel
+    @State var showed = false
     
     var body: some View {
         ZStack{
@@ -20,6 +21,9 @@ struct StationInformationView: View {
                     Text("State: \(info.state ?? "")")
                     Text("Timezone: \(info.timezone ?? "")")
                     Text("Latitude: \(info.location?.lat ?? 0.0) Longitude: \(info.location?.lon ?? 0.0)")
+                    NavigationLink("Measurements") {
+                        StationMeasurementsView(vm: StationMeasurementsViewModel(id: vm.id))
+                    }
                     HStack{
                         if let measure = info.currentMeasurement{
                             StationMeasurementItem(measurement: measure)
@@ -41,6 +45,8 @@ struct StationInformationView: View {
             }
         }
         .onAppear {
+            guard !showed else { return }
+            showed.toggle()
             vm.fetchInformation()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {
