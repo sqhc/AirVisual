@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MapListView: View {
     @StateObject var vm: MapListViewModel
+    @State var showed = false
     
     var body: some View {
         ZStack{
@@ -24,6 +25,8 @@ struct MapListView: View {
             }
         }
         .onAppear {
+            guard !showed else { return }
+            showed.toggle()
             vm.fetchMapList()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {
@@ -53,6 +56,18 @@ struct MapListItem: View{
             Text("City: \(mapList.city ?? "")")
             Text("Latitude: \(mapList.location?.lat ?? 0.0) Longitude: \(mapList.location?.lon ?? 0.0)")
             Text("Type: \(mapList.type ?? "")")
+            if let type = mapList.type{
+                if type == "station"{
+                    NavigationLink("Station information") {
+                        StationInformationView(vm: StationInformationViewModel(id: mapList.id ?? ""))
+                    }
+                }
+                else{
+                    NavigationLink("City information") {
+                        CityInformationView(vm: CityInformationViewModel(id: mapList.id ?? ""))
+                    }
+                }
+            }
             Text("Current measurement time: \(mapList.currentMeasurement?.ts ?? "")")
             Text("AQIUS: \(mapList.currentMeasurement?.aqius ?? 0) AQICN: \(mapList.currentMeasurement?.aqicn ?? 0)")
             if let pollutants = mapList.currentMeasurement?.pollutants{

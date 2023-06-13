@@ -47,6 +47,7 @@ class MapListViewModel: ObservableObject{
         
         URLSession.shared
             .dataTaskPublisher(for: request)
+            .receive(on: DispatchQueue.main)
             .tryMap { result -> MapList in
                 guard let response = result.response as? HTTPURLResponse,
                       response.statusCode >= 200 && response.statusCode <= 300 else{
