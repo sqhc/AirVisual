@@ -28,6 +28,10 @@
 		0643F2022A3774AA006C90BD /* StationInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F2012A3774AA006C90BD /* StationInformationViewModel.swift */; };
 		0643F2042A3792E0006C90BD /* StationMeasurementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F2032A3792DF006C90BD /* StationMeasurementsView.swift */; };
 		0643F2062A3792F6006C90BD /* StationMeasurementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F2052A3792F6006C90BD /* StationMeasurementsViewModel.swift */; };
+		0643F2082A38C43F006C90BD /* MapListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F2072A38C43F006C90BD /* MapListDataModel.swift */; };
+		0643F20A2A38C786006C90BD /* MapListSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F2092A38C786006C90BD /* MapListSearchView.swift */; };
+		0643F20C2A38D565006C90BD /* MapListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F20B2A38D565006C90BD /* MapListView.swift */; };
+		0643F20E2A38D57A006C90BD /* MapListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643F20D2A38D57A006C90BD /* MapListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		0643F2012A3774AA006C90BD /* StationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationInformationViewModel.swift; sourceTree = "<group>"; };
 		0643F2032A3792DF006C90BD /* StationMeasurementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMeasurementsView.swift; sourceTree = "<group>"; };
 		0643F2052A3792F6006C90BD /* StationMeasurementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMeasurementsViewModel.swift; sourceTree = "<group>"; };
+		0643F2072A38C43F006C90BD /* MapListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListDataModel.swift; sourceTree = "<group>"; };
+		0643F2092A38C786006C90BD /* MapListSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListSearchView.swift; sourceTree = "<group>"; };
+		0643F20B2A38D565006C90BD /* MapListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListView.swift; sourceTree = "<group>"; };
+		0643F20D2A38D57A006C90BD /* MapListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,7 @@
 				0643F1FD2A3691A4006C90BD /* CityMeasurementViewModel.swift */,
 				0643F2012A3774AA006C90BD /* StationInformationViewModel.swift */,
 				0643F2052A3792F6006C90BD /* StationMeasurementsViewModel.swift */,
+				0643F20D2A38D57A006C90BD /* MapListViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -179,6 +188,8 @@
 				0643F1FB2A36918C006C90BD /* CityMeasurementView.swift */,
 				0643F1FF2A37748B006C90BD /* StationInformationView.swift */,
 				0643F2032A3792DF006C90BD /* StationMeasurementsView.swift */,
+				0643F2092A38C786006C90BD /* MapListSearchView.swift */,
+				0643F20B2A38D565006C90BD /* MapListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 				0643F1E72A324158006C90BD /* AutoCompleteDataModel.swift */,
 				0643F1EF2A339902006C90BD /* CityInformationDataModel.swift */,
 				0643F1F92A368F44006C90BD /* CityMeasurementsDataModel.swift */,
+				0643F2072A38C43F006C90BD /* MapListDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,7 +340,11 @@
 				0643F1BD2A323C30006C90BD /* ContentView.swift in Sources */,
 				0643F1F42A33A224006C90BD /* CityInformationViewModel.swift in Sources */,
 				0643F2062A3792F6006C90BD /* StationMeasurementsViewModel.swift in Sources */,
+				0643F20A2A38C786006C90BD /* MapListSearchView.swift in Sources */,
 				0643F1F02A339902006C90BD /* CityInformationDataModel.swift in Sources */,
+				0643F20E2A38D57A006C90BD /* MapListViewModel.swift in Sources */,
+				0643F2082A38C43F006C90BD /* MapListDataModel.swift in Sources */,
+				0643F20C2A38D565006C90BD /* MapListView.swift in Sources */,
 				0643F1EA2A324DB9006C90BD /* AutoCompleteSearchAirView.swift in Sources */,
 				0643F2042A3792E0006C90BD /* StationMeasurementsView.swift in Sources */,
 				0643F1E82A324158006C90BD /* AutoCompleteDataModel.swift in Sources */,

@@ -21,7 +21,10 @@ struct ContentView: View {
                     NavigationLink("Auto complete") {
                         AutoCompleteSearchAirView()
                     }
-                    
+                    Divider()
+                    NavigationLink("Map list search") {
+                        MapListSearchView()
+                    }
                     Spacer()
                 }
                 .foregroundColor(.white)
